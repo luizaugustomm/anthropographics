@@ -9,16 +9,14 @@
 }
 
 .card-img-top {
-  height: 2em!important;
-  object-fit: cover!important;
+  height: 5em;
+  object-fit: cover;
 }
 
 .card-title {
-  font-weight: 600;
-  font-size: 16px;
+  font-size: 1.3em!important;
 }
 
 .card-text {
-  font-weight: 400;
-  font-size: 12px;
+  font-size: 0.9em!important;
 }

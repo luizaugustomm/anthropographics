@@ -6,7 +6,7 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vQOVGTdhVf8xPIDHrpFCwxcQ
   .data(data)
   .enter()
   .append('div')
-  .attr('class', 'col-sm-6 col-md-4 col-lg-3 mb-2 mx-4')
+  .attr('class', 'col-sm-6 col-md-4 col-lg-3 mb-2')
   .attr('onclick', d => 'window.open("' + d.url + '")' )
   .append('div')
   .attr('class', d => 'card');
@@ -16,8 +16,6 @@ cards
   .attr('class', 'card-img-top')
   .attr('src', d => d.img)
   .attr('alt', d => d.title)
-  .style('height', '5em')
-  .style('object-fit', 'cover')
 
 const cardBodies = cards
   .append('div')
@@ -30,7 +28,7 @@ cardBodies
 
 cardBodies
   .append('div')
-  .attr('class', 'card-text')
+  .attr('class', 'card-text text-muted')
   .text(d => d.authors)
 
 });
