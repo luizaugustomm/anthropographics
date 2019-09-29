@@ -7,14 +7,14 @@ d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vQOVGTdhVf8xPIDHrpFCwxcQ
   .enter()
   .append('div')
   .attr('class', 'col-sm-6 col-md-4 col-lg-3 mb-2')
-  .attr('onclick', d => 'window.open("' + d.url + '")' )
+  .attr('onclick', d => 'window.open("' + d.id + '")' )
   .append('div')
   .attr('class', d => 'card');
 
 cards
   .append('img')
   .attr('class', 'card-img-top')
-  .attr('src', d => d.img)
+  .attr('src', d => d.thumbnail)
   .attr('alt', d => d.title)
 
 const cardBodies = cards
