@@ -6,13 +6,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <!-- Load styles and modules -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="js/lib/d3.min.js"></script>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
   </head>
   <body>
+    <div class="modal fade" id="visualization-modal" tabindex="-1" role="dialog" aria-labelledby="visualization-title" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id=visualization-title></h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          </div>
+          <div class="modal-body">
+            <img id="visualization-image">
+          </div>
+          <div class="modal-footer">
+            <p class="text-muted">
+              Author(s) / Source: <a id="visualization-website" target="_blank"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <main class="container">
       <header class="row mt-4">
         <div class="col">
