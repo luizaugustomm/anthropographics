@@ -11,7 +11,6 @@ d3.csv(url).then(function(data) {
     .append('div')
     .attr('class', 'card')
     .on('click', d => {
-      console.log("card " + d.title);
       d3.select('#visualization-title')
         .text(d.title)
 
@@ -24,8 +23,20 @@ d3.csv(url).then(function(data) {
         .attr('href', d.url_source)
         .text(d.authors)
 
-      $('#visualization-modal').modal('show');
+      d3.select('#visualization-dimensions')
+        .html(() => {
+          let tags = ''
+          tags += `<span class="badge badge-pill badge-secondary">granularity: ${d.granularity.toLowerCase()}</span>\n`
+          tags += `<span class="badge badge-pill badge-secondary">specificity: ${d.specificity.toLowerCase()}</span>\n`
+          tags += `<span class="badge badge-pill badge-secondary">coverage: ${d.coverage.toLowerCase()}</span>\n`
+          tags += `<span class="badge badge-pill badge-secondary">authenticity: ${d.authenticity.toLowerCase()}</span>\n`
+          tags += `<span class="badge badge-pill badge-secondary">realism: ${d.realism.toLowerCase()}</span>\n`
+          tags += `<span class="badge badge-pill badge-secondary">situatedness: ${d.situatedness.toLowerCase()}</span>\n`
+          tags += `<span class="badge badge-pill badge-secondary">physicality: ${d.physicality.toLowerCase()}</span>\n`
+          return tags
+        })
 
+      $('#visualization-modal').modal('show');
     })
 
   cards
