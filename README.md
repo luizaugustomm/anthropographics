@@ -1,2 +1,4 @@
-# anthropographics
-List of visualizations about people
+# Anthropographics list
+A collection of visualizations about people.
+
+https://luizaugustomm.github.io/anthropographics/
