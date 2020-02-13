@@ -1,4 +1,4 @@
-
+const cors = 'https://cors-anywhere.herokuapp.com/'
 const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQOVGTdhVf8xPIDHrpFCwxcQA4J4RzElbX3wW5IIw36Tap_339eWIk8TWB2Tka9zGOpkJdv_TYVYXlO/pub?gid=0&single=true&output=csv'
 
 function createCard(d) {
@@ -49,14 +49,14 @@ function updateCardModal(d) {
   $('#visualization-modal').modal('show')
 }
 
-function resetFilters() {  
+function resetFilters() {
   d3.selectAll('.filter')
     .property('checked', true)
     .dispatch('change')
 }
 
 
-d3.csv(url).then(function(data) {
+d3.csv(cors+url).then(function(data) {
   var totalVis = data.length
   d3.select('#summary')
     .text(`${totalVis} out of ${totalVis} visualizations`)
