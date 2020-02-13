@@ -47,154 +47,158 @@
       <section class="row" id="filters">
         <div class="col">
           <div class="row">
-            <h3 class="small font-weight-bold">GRANULARITY</h3>
-            <div class="form-check">
-              <input class="form-check-input filter filter-granularity" type="checkbox" value="Low" checked>
-              <label class="form-check-label" for="granularity-low">
-                Low
-              </label>
+            <div class="col">
+              <h3 class="small font-weight-bold">GRANULARITY</h3>
+              <div class="form-check">
+                <input class="form-check-input filter filter-granularity" type="checkbox" value="Low" checked>
+                <label class="form-check-label" for="granularity-low">
+                  Low
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input filter filter-granularity" type="checkbox" value="Intermediate" checked>
+                <label class="form-check-label" for="granularity-int">
+                  Intermediate
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input filter filter-granularity" type="checkbox" value="Maximum" checked>
+                <label class="form-check-label" for="granularity-max">
+                  Maximum
+                </label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input filter filter-granularity" type="checkbox" value="Intermediate" checked>
-              <label class="form-check-label" for="granularity-int">
-                Intermediate
-              </label>
+            <div class="col">
+              <h3 class="small font-weight-bold">SPECIFICITY</h3>
+              <div class="form-check">
+                <input class="form-check-input filter filter-specificity" type="checkbox" value="Low" id="specificity-low" checked>
+                <label class="form-check-label" for="specificity-low">
+                  Low
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input filter filter-specificity" type="checkbox" value="Intermediate" id="specificity-int" checked>
+                <label class="form-check-label" for="specificity-int">
+                  Intermediate
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input filter filter-specificity" type="checkbox" value="High" id="specificity-high" checked>
+                <label class="form-check-label" for="specificity-high">
+                  High
+                </label>
+              </div>
             </div>
-            <div class="form-check">
-              <input class="form-check-input filter filter-granularity" type="checkbox" value="Maximum" checked>
-              <label class="form-check-label" for="granularity-max">
-                Maximum
-              </label>
+            <div class="col">
+              <h3 class="small font-weight-bold">COVERAGE</h3>
+              <div class="form-check">
+                <input class="form-check-input filter filter-coverage" type="checkbox" value="Minimum" id="coverage-min" checked>
+                <label class="form-check-label" for="coverage-min">
+                  Minimum
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input filter filter-coverage" type="checkbox" value="Partial" id="coverage-part" checked>
+                <label class="form-check-label" for="coverage-part">
+                  Partial
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input filter filter-coverage" type="checkbox" value="Full" id="coverage-full" checked>
+                <label class="form-check-label" for="coverage-full">
+                  Full
+                </label>
+              </div>
+            </div>
+            <div class="col">
+              <h3 class="small font-weight-bold">AUTHENTICITY</h3>
+              <div class="form-check">
+                <input class="form-check-input filter filter-authenticity" type="checkbox" value="Partial" id="authenticity-part" checked>
+                <label class="form-check-label" for="authenticity-part">
+                  Partial
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input filter filter-authenticity" type="checkbox" value="Full" id="authenticity-full" checked>
+                <label class="form-check-label" for="authenticity-full">
+                  Full
+                </label>
+              </div>
+            </div>
+            <div class="col">
+              <h3 class="small font-weight-bold">REALISM</h3>
+              <div class="form-check">
+                <input class="form-check-input filter filter-realism" type="checkbox" value="Low" id="realism-low" checked>
+                <label class="form-check-label" for="realism-low">
+                  Low
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input filter filter-realism" type="checkbox" value="Intermediate" id="realism-int" checked>
+                <label class="form-check-label" for="realism-int">
+                  Intermediate
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input filter filter-realism" type="checkbox" value="High" id="realism-high" checked>
+                <label class="form-check-label" for="realism-high">
+                  High
+                </label>
+              </div>
+            </div>
+            <div class="col">
+              <h3 class="small font-weight-bold">PHYSICALITY</h3>
+              <div class="form-check">
+                <input class="form-check-input filter filter-physicality" type="checkbox" value="Low" id="physicality-low" checked>
+                <label class="form-check-label" for="physicality-low">
+                  Low
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input filter filter-physicality" type="checkbox" value="Intermediate" id="physicality-int" checked>
+                <label class="form-check-label" for="physicality-int">
+                  Intermediate
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input filter filter-physicality" type="checkbox" value="Maximum" id="physicality-max" checked>
+                <label class="form-check-label" for="physicality-max">
+                  Maximum
+                </label>
+              </div>
+            </div>
+            <div class="col">
+              <h3 class="small font-weight-bold">SITUATEDNESS</h3>
+              <div class="form-check">
+                <input class="form-check-input filter filter-situatedness" type="checkbox" value="Low" id="situatedness-low" checked>
+                <label class="form-check-label" for="situatedness-low">
+                  Low
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input filter filter-situatedness" type="checkbox" value="Intermediate" id="situatedness-int" checked>
+                <label class="form-check-label" for="situatedness-int">
+                  Intermediate
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input filter filter-situatedness" type="checkbox" value="High" id="situatedness-high" checked>
+                <label class="form-check-label" for="situatedness-high">
+                  High
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input filter filter-situatedness" type="checkbox" value="Maximum" id="situatedness-max" checked>
+                <label class="form-check-label" for="situatedness-max">
+                  Maximum
+                </label>
+              </div>
             </div>
           </div>
-          <div class="row mt-4">
-            <input class="btn btn-dark btn-sm" type="button" name="reset-filters" value="Reset filters" onclick="resetFilters()">
-          </div>
-        </div>
-        <div class="col" id="specificity">
-          <h3 class="small font-weight-bold">SPECIFICITY</h3>
-          <div class="form-check">
-            <input class="form-check-input filter filter-specificity" type="checkbox" value="Low" id="specificity-low" checked>
-            <label class="form-check-label" for="specificity-low">
-              Low
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input filter filter-specificity" type="checkbox" value="Intermediate" id="specificity-int" checked>
-            <label class="form-check-label" for="specificity-int">
-              Intermediate
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input filter filter-specificity" type="checkbox" value="High" id="specificity-high" checked>
-            <label class="form-check-label" for="specificity-high">
-              High
-            </label>
-          </div>
-        </div>
-        <div class="col" id="coverage">
-          <h3 class="small font-weight-bold">COVERAGE</h3>
-          <div class="form-check">
-            <input class="form-check-input filter filter-coverage" type="checkbox" value="Minimum" id="coverage-min" checked>
-            <label class="form-check-label" for="coverage-min">
-              Minimum
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input filter filter-coverage" type="checkbox" value="Partial" id="coverage-part" checked>
-            <label class="form-check-label" for="coverage-part">
-              Partial
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input filter filter-coverage" type="checkbox" value="Full" id="coverage-full" checked>
-            <label class="form-check-label" for="coverage-full">
-              Full
-            </label>
-          </div>
-        </div>
-        <div class="col" id="authenticity">
-          <h3 class="small font-weight-bold">AUTHENTICITY</h3>
-          <div class="form-check">
-            <input class="form-check-input filter filter-authenticity" type="checkbox" value="Partial" id="authenticity-part" checked>
-            <label class="form-check-label" for="authenticity-part">
-              Partial
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input filter filter-authenticity" type="checkbox" value="Full" id="authenticity-full" checked>
-            <label class="form-check-label" for="authenticity-full">
-              Full
-            </label>
-          </div>
-        </div>
-        <div class="col" id="realism">
-          <h3 class="small font-weight-bold">REALISM</h3>
-          <div class="form-check">
-            <input class="form-check-input filter filter-realism" type="checkbox" value="Low" id="realism-low" checked>
-            <label class="form-check-label" for="realism-low">
-              Low
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input filter filter-realism" type="checkbox" value="Intermediate" id="realism-int" checked>
-            <label class="form-check-label" for="realism-int">
-              Intermediate
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input filter filter-realism" type="checkbox" value="High" id="realism-high" checked>
-            <label class="form-check-label" for="realism-high">
-              High
-            </label>
-          </div>
-        </div>
-        <div class="col" id="physicality">
-          <h3 class="small font-weight-bold">PHYSICALITY</h3>
-          <div class="form-check">
-            <input class="form-check-input filter filter-physicality" type="checkbox" value="Low" id="physicality-low" checked>
-            <label class="form-check-label" for="physicality-low">
-              Low
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input filter filter-physicality" type="checkbox" value="Intermediate" id="physicality-int" checked>
-            <label class="form-check-label" for="physicality-int">
-              Intermediate
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input filter filter-physicality" type="checkbox" value="Maximum" id="physicality-max" checked>
-            <label class="form-check-label" for="physicality-max">
-              Maximum
-            </label>
-          </div>
-        </div>
-        <div class="col" id="situatedness">
-          <h3 class="small font-weight-bold">SITUATEDNESS</h3>
-          <div class="form-check">
-            <input class="form-check-input filter filter-situatedness" type="checkbox" value="Low" id="situatedness-low" checked>
-            <label class="form-check-label" for="situatedness-low">
-              Low
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input filter filter-situatedness" type="checkbox" value="Intermediate" id="situatedness-int" checked>
-            <label class="form-check-label" for="situatedness-int">
-              Intermediate
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input filter filter-situatedness" type="checkbox" value="High" id="situatedness-high" checked>
-            <label class="form-check-label" for="situatedness-high">
-              High
-            </label>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input filter filter-situatedness" type="checkbox" value="Maximum" id="situatedness-max" checked>
-            <label class="form-check-label" for="situatedness-max">
-              Maximum
-            </label>
+          <div class="row">
+            <div class="col">
+              <input class="btn btn-dark btn-sm" type="button" name="reset-filters" value="Reset filters" onclick="resetFilters()">
+            </div>
           </div>
         </div>
       </section>
