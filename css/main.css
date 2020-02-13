@@ -20,3 +20,11 @@
 .card-text {
   font-size: 0.9em!important;
 }
+
+#filters {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding: 1em;
+  background-color: #efefef;
+  border-radius: 1em;
+}
