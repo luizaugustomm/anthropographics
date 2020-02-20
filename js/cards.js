@@ -1,6 +1,3 @@
-const cors = 'https://cors-anywhere.herokuapp.com/'
-const url = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQOVGTdhVf8xPIDHrpFCwxcQA4J4RzElbX3wW5IIw36Tap_339eWIk8TWB2Tka9zGOpkJdv_TYVYXlO/pub?gid=0&single=true&output=csv'
-
 function createCard(d) {
   const img = `<img class="card-img-top" src="img/thumbnails/${d.id}-tn.png" alt="${d.title}">`
   const cardTitle = `<h5 class="card-title">${d.title}</h5>`
@@ -10,17 +7,17 @@ function createCard(d) {
   return card
 }
 
-function updateCards(newData) {
+export function updateCards(nd) {
   const cardWrappers = d3.select('#cards')
     .selectAll('.card-wrapper')
-    .data(newData)
+    .data(nd)
     .join('div')
     .attr('class', 'col-sm-6 col-md-4 col-lg-3 mb-2 card-wrapper')
         .html(createCard)
         .on('click', updateCardModal)
 }
 
-function updateCardModal(d) {
+export function updateCardModal(d) {
   d3.select('#visualization-title')
     .text(d.title)
 
@@ -48,41 +45,3 @@ function updateCardModal(d) {
 
   $('#visualization-modal').modal('show')
 }
-
-function resetFilters() {
-  d3.selectAll('.filter')
-    .property('checked', true)
-    .dispatch('change')
-}
-
-
-d3.csv(cors+url).then(function(data) {
-  var totalVis = data.length
-  d3.select('#summary')
-    .text(`${totalVis} out of ${totalVis} visualizations`)
-
-  updateCards(data)
-
-  d3.selectAll('.filter:checked')
-    .on('change', function() {
-      const dimensions = ['granularity', 'specificity', 'coverage',
-                          'authenticity', 'realism', 'physicality', 'situatedness']
-      let newData = data
-
-      dimensions.forEach(dimension => {
-        let changed = []
-        d3.selectAll(`.filter-${dimension}:checked`)
-          .each(function() {
-            changed.push(this.value)
-          })
-        newData = newData.filter(function(d) {
-          return changed.includes(d[dimension])
-        })
-      })
-
-      updateCards(newData)
-
-      d3.select('#summary')
-        .text(`${newData.length} out of ${totalVis} visualizations`)
-    })
-})

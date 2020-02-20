@@ -21,10 +21,44 @@
   font-size: 0.9em!important;
 }
 
-#filters {
+.filters-box {
   margin-top: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   padding: 1em;
-  background-color: #efefef;
+  background-color: #f8f9fa;
   border-radius: 1em;
+}
+
+.families-box {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+  border: 2px solid #f8f9fa;
+  border-radius: 1em;
+}
+
+.dimension-values {
+  margin: 1px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.dimension-values > li {
+  padding-left: 5px;
+}
+
+.dimension-default {
+  color: black;
+  border: 0px;
+}
+
+.dimension-unselected {
+  color: #dedede;
+  border: 0px;
+}
+
+.dimension-selected {
+  color: black;
+  border: 2px solid #007bff;
+  border-radius: 5px;
 }
