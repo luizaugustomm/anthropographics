@@ -21,6 +21,7 @@ export const FAMILIES = {
  'face-charts' : ['granularity-maximum',
                   'realism-high'],
  'embellished-charts' : ['authenticity-partial'],
+ 'single-person' : ['coverage-minimum'],
  'example-driven' : ['specificity-intermediate',
                      'specificity-high',
                      'coverage-minimum',
