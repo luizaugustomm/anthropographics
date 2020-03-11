@@ -3,6 +3,14 @@ import {updateCards, updateCardModal} from './cards.js'
 
 d3.csv(CORS+URL).then(function(data) {
 
+  // Test whether a specific visualization needs to be shown
+  let hash = window.location.hash
+  if (hash !== '') {
+    let nid = hash.slice(1,hash.length)
+    let d = data.filter(e => e.nid === nid)[0]
+    updateCardModal(d)
+  }
+
   var totalVis = data.length
   d3.select('#summary')
     .text(`${totalVis} out of ${totalVis} visualizations`)
