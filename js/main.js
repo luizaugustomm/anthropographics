@@ -8,7 +8,9 @@ d3.csv(CORS+URL).then(function(data) {
   if (hash !== '') {
     let nid = hash.slice(1,hash.length)
     let d = data.filter(e => e.nid === nid)[0]
-    updateCardModal(d)
+    if (d !== undefined) {
+      updateCardModal(d)
+    }  
   }
 
   var totalVis = data.length
