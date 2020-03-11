@@ -1,9 +1,10 @@
 function createCard(d) {
   const img = `<img class="card-img-top" src="img/thumbnails/${d.id}-tn.png" alt="${d.title}">`
+  const badgeId = `<div class="card-img-overlay"><h5><span class="badge badge-pill badge-dark">${d.nid}</span></h5></div>`
   const cardTitle = `<h5 class="card-title">${d.title}</h5>`
   const cardAuthors = `<div class="card-text text-muted">${d.authors}</div>`
   const body = `<div class="card-body">${cardTitle}${cardAuthors}</div>`
-  const card = `<div class="card">${img}${body}</div>`
+  const card = `<div class="card">${img}${badgeId}${body}</div>`
   return card
 }
 
