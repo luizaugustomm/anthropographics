@@ -1,4 +1,4 @@
-export const CORS = 'https://cors-anywhere.herokuapp.com/'
+export const CORS = 'https://anthropographics-cors.herokuapp.com/'
 export const URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQOVGTdhVf8xPIDHrpFCwxcQA4J4RzElbX3wW5IIw36Tap_339eWIk8TWB2Tka9zGOpkJdv_TYVYXlO/pub?gid=0&single=true&output=csv'
 
 export const DIMENSIONS = ['granularity', 'specificity', 'coverage',
