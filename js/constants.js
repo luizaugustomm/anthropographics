@@ -1,6 +1,8 @@
 export const CORS = 'https://anthropographics-cors.herokuapp.com/'
 export const URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQOVGTdhVf8xPIDHrpFCwxcQA4J4RzElbX3wW5IIw36Tap_339eWIk8TWB2Tka9zGOpkJdv_TYVYXlO/pub?gid=0&single=true&output=csv'
 
+export const LOCAL_FILE = 'list.csv'
+
 export const DIMENSIONS = ['granularity', 'specificity', 'coverage',
                     'authenticity', 'realism', 'physicality', 'situatedness']
 

@@ -1,7 +1,8 @@
-import {CORS, URL, DIMENSIONS, FAMILIES} from './constants.js'
+import {LOCAL_FILE, DIMENSIONS, FAMILIES} from './constants.js'
 import {updateCards, updateCardModal} from './cards.js'
 
-d3.csv(CORS+URL).then(function(data) {
+// d3.csv(CORS+URL).then(function(data) {
+d3.csv(LOCAL_FILE).then(function(data) {
 
   // Test whether a specific visualization needs to be shown
   let hash = window.location.hash
